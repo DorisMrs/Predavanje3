@@ -1,0 +1,16 @@
+<ion-content>
+  <ion-icon [ngClass]="{'logiran': userService.logiran}" name="wifi-outline"></ion-icon>
+  <ion-thumbnail>
+      <ion-img src="assets/images/logo.png"></ion-img>
+</ion-thumbnail>
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input type="text" [(ngModel)]="name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <ion-button shape="round" (click)="login()">Login</ion-button>
+
+</ion-content>
